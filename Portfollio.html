@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Ilyas</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" sizes="180x180" href="Namfavicon/Artboard 3.svg">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ════════════════════════ HEADER ════════════════════════ -->
+<!-- CSS keyframe handles header animation — no extra class needed -->
+<header>
+    <div class="top">
+        <img src="Namfavicon/Artboard 3.svg" alt="Logo" width="50px" height="50px">
+        <a href="#home" class="logo">Portfollio</a>
+    </div>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- ════════════════════════ HOME ════════════════════════ -->
+<!-- .home-info and .home-img animate via CSS keyframes -->
+<section class="home" id="home">
+    <div class="home-info">
+        <h1>Muhammed Ilyas</h1>
+        <h2>I'm a
+            <span style="--i:2;" data-text="Front-End Developer">Front-End Developer</span>
+            <span style="--i:1;" data-text="Graphic Designer">Graphic Designer</span>
+    
+        </h2>
+        <p>Transforms complex challenges into intuitive and elegant digital experiences. As a designer and developer, the workflow covers end-to-end execution—from initial user research and detailed interface design to writing high-quality frontend code, ensuring projects are delivered seamlessly and flawlessly.</p>
+        <div class="btn-sci">
+            <a href="#" class="btn">Download CV</a>
+            <div class="sci">
+                <a href="https://github.com/MuhammedIlyaz" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/muhammed-ilyas-86b8b2384/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/muhammed_ilyazz/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="mine img/portfollio_02.png" alt="Muhammed Ilyas">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════ RESUME / ABOUT ════════════════════════ -->
+<section class="resume-sect" id="about">
+
+    <div class="resume-container">
+
+        <!-- Left column: slides in from the left -->
+        <div class="resume-box animate-on-scroll from-left">
+            <h2>Why Hire <span style="color:#00d9ff;">Me?</span></h2>
+            <p class="desc">
+                I craft fast, responsive, and visually stunning web applications with precision and clean architecture. Hiring me means getting a developer who bridges pixel-perfect UI design with modern frontend technologies—ensuring high performance, cross-browser compatibility, 
+                seamless interactivity, and scalable codebase structure.
+            </p>
+            <!-- data-target must match the id on each .resume-detail -->
+            <button data-target="about-tab"   class="resume-btn active">About Me</button>
+            <button data-target="skills"      class="resume-btn">Skills</button>
+            <button data-target="experience"  class="resume-btn">Experience</button>
+            <button data-target="education"   class="resume-btn">Education</button>
+        </div>
+
+        <!-- Right column: slides in from the right -->
+        <div class="resume-box animate-on-scroll from-right">
+
+            <!-- ── About Me ── -->
+            <div class="resume-detail aboutme active" id="about-tab">
+                <h2 class="heading">About <span>Me</span></h2>
+                <p class="desc">
+                    A dedicated Frontend Developer passionate about transforming complex designs into smooth, interactive digital experiences.
+                     I specialize in building high-performance, accessible, and reactive web interfaces using modern frameworks, 
+                    clean JavaScript, and optimized CSS architecture.
+                </p>
+                <h1 style="color:white; padding-bottom:15px; font-size:2.8rem;">
+                    Why I <span style="color:#00d9ff;">Stand Out?</span>
+                </h1>
+                <!-- stagger-children makes each card animate in sequence -->
+                <div class="resume-list stagger-children">
+                    <div class="resume-item">
+                        <p style="color:white; font-size:1.5rem; line-height:1.8;">
+                            I deliver core value through Code Quality & UI Precision. With expertise in modern component-driven development (React.js), performance optimization, 
+                            and responsive design systems, I turn static wireframes into dynamic, accessible digital products. My workflow prioritizes Clean Architecture, Web Accessibility (a11y), and Performance Optimization,
+                             maintaining technical integrity while providing end users with fluid, responsive interactions across all devices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Skills ── -->
+            <div class="resume-detail skills" id="skills">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <p class="desc">
+                    Leveraging a hybrid skillset to deliver products that are aesthetically sound and technically robust. The following stack represents the tools and languages utilized to manage the entire workflow, from conducting user research and prototyping to developing high-performance, responsive interfaces.
+                </p>
+                <!-- stagger-children staggers each skill icon in -->
+                <div class="resume-list stagger-children">
+                    <div class="resume-item"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+                    <div class="resume-item"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+                    <div class="resume-item"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+                    <div class="resume-item"><i class='bx bxl-tailwind-css'></i><span>Tailwind CSS</span></div>
+                    <div class="resume-item"><i class='bx bxl-react'></i><span>React.js</span></div>
+                    <div class="resume-item"><i class='bx bxl-figma'></i><span>Figma</span></div>
+                    <div class="resume-item"><i class='bx bxl-bootstrap'></i><span>Bootstrap</span></div>
+                </div>
+            </div>
+
+            <!-- ── Experience ── -->
+            <div class="resume-detail experience" id="experience">
+                <h2 class="heading">My <span>Experience</span></h2>
+                <p class="desc">
+                   A record of my journey developing web applications, building production-ready projects, 
+                   and continuously expanding my frontend technical expertise.
+                </p>
+                <div class="resume-list stagger-children">
+                    <div class="resume-item">
+                        <p class="yeAR">2025 – present</p>
+                        <h3>Frontend Web Developer (Independent)</h3>
+                        <p class="Company">Self-Directed Projects</p>
+                        <p>Engineered functional, high-performance web applications using React, JavaScript, and Tailwind CSS. Built component-driven frontend interfaces, 
+                            integrated state management, and optimized cross-browser performance. Showcased core capabilities across key projects below, including dynamic interactive layouts,
+                             API integrations, and fully responsive web designs.</p>
+                    </div>
+                    
+                    <!-- <div class="resume-item">
+                        <p class="yeAR">2024 – present</p>
+                        <h3>Still didn't have experience</h3>
+                        <p class="Company">Home</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis quo voluptatibus repudiandae minus recusandae dolores iusto, atque neque!</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="yeAR">2024 – present</p>
+                        <h3>Still didn't have experience</h3>
+                        <p class="Company">Home</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis quo voluptatibus repudiandae minus recusandae dolores iusto, atque neque!</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="yeAR">2024 – present</p>
+                        <h3>Still didn't have experience</h3>
+                        <p class="Company">Home</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis quo voluptatibus repudiandae minus recusandae dolores iusto, atque neque!</p>
+                    </div>-->
+                </div> 
+            </div>
+
+            <!-- ── Education ── -->
+            <div class="resume-detail education" id="education">
+                <h2 class="heading">My <span>Education</span></h2>
+                <p class="desc">
+                    A continuous journey of learning, developing, and improving. My studies have helped me gain knowledge in software development, 
+                    database systems, web technologies, and real-world project experience.
+                </p>
+                <div class="resume-list stagger-children">
+                    <div class="resume-item">
+                        <p class="year">2023 — 2024</p>
+                        <h3>Diploma in Computing</h3>
+                        <p class="Company">Esoft Metro Campus</p>
+                        <p>Built a strong foundation in programming, software development, databases, web development, and computer fundamentals.</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="year">2024 — 2026</p>
+                        <h3>Higher National Diploma (HND) in Computing</h3>
+                        <p class="Company">Esoft Metro Campus</p>
+                        <p>Developed advanced skills in software development, system design, database management, and modern web technologies through practical projects.</p>
+                    </div>
+
+                    <!--<div class="resume-item">
+                        <p class="year">2024 – present</p>
+                        <h3>Still didn't have experience</h3>
+                        <p class="Company">Home</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis quo voluptatibus repudiandae minus recusandae dolores iusto, atque neque!</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="year">2024 – present</p>
+                        <h3>Still didn't have experience</h3>
+                        <p class="Company">Home</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis quo voluptatibus repudiandae minus recusandae dolores iusto, atque neque!</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="year">2024 – present</p>
+                        <h3>Still didn't have experience</h3>
+                        <p class="Company">Home</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis quo voluptatibus repudiandae minus recusandae dolores iusto, atque neque!</p>
+                    </div>-->
+                </div>
+            </div>
+
+        </div><!-- /resume-box right -->
+    </div><!-- /resume-container -->
+</section>
+
+
+<!-- ════════════════════════ PORTFOLIO ════════════════════════ -->
+<section class="portfolio" id="portfolio">
+
+    <!-- Heading slides in from the left -->
+    <h2 class="heading animate-on-scroll from-left" style="text-align:center; font-size:4.5rem;">
+        Latest <span>Project</span>
+    </h2>
+
+    <div class="portfollio-container">
+
+        <!-- Left box: project details — each card has animate-on-scroll -->
+        <div class="portfolio-box">
+            <div class="portfollio-detail active animate-on-scroll">
+                <p class="numb">01</p>
+                <h3>Rolls-Royce Luxury Showcase Replica</h3>
+                <p>Engineered a high-performance luxury automotive web application replicating the iconic Rolls-Royce showcase experience. 
+                    Developed pixel-perfect, responsive layouts with custom interactive image carousels, smooth navigation transitions, 
+                    and reactive state management to deliver a premium user experience across all screen sizes.</p>
+                <div class="tech"><p>Technologies Used: <span style="color: #00d9ff;">HTML | CSS | JAVASCRIPT | REACT</span> </p>
+                </div>
+                <div class="live">
+                    <a href="https://rolls-royce-website-7jqd.vercel.app/Model/spectre" target="_blank"><i class='bx bx-arrow-back'></i>Live Project</a>
+                   <a href="https://github.com/MuhammedIlyaz/Rolls-Royce-Website" target="_blank"><i class='bx bxl-github'></i>Github Repo</a> 
+                    
+                </div>
+            </div>
+
+            <div class="portfollio-detail active animate-on-scroll">
+                <p class="numb">02</p>
+                <h3>ZORRO Automotive Branding</h3>
+                <p>Created a modern and bold brand identity for ZORRO, a three-wheel and bike modification shop. Designed a unique logo concept that represents speed, power, 
+                    and automotive style while maintaining a clean and professional appearance.</p>
+                <div class="tech"><p>Software Used: <span style="color: #00d9ff;">Illustrator | Canva</span> </p>
+                </div>
+                <div class="live">
+                    <a href="https://drive.google.com/file/d/1-JLsQGEEqFsrLbKr42WN-GXOE5FRat_2/view?usp=drive_link" target="_blank"><i class="bx bxl-google"></i>Google Drive</a>
+                    <a href="https://canva.link/d69e0hzdqy7bgmd" target="_blank"> <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  fill="currentColor" viewBox="0 0 24 24" >
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-.39 16.5c-2.95 0-4.86-2.21-4.86-5.56 0-4.32 2.99-7.45 6.36-7.45 2.04 0 3.25 1.03 3.25 2.42s-1.04 2.46-1.93 2.46c-.22 0-.33-.11-.33-.29 0-.4.64-1 .64-2.13 0-.95-.58-1.55-1.53-1.55-2.04 0-4.36 2.41-4.36 6.58 0 2.46 1.22 4.24 3.19 4.24 1.71 0 3.18-1.22 4.03-2.96.08-.15.15-.22.23-.22.12 0 .23.1.23.33 0 1.01-1.81 4.12-4.94 4.12Z"></path>
+                    </svg>Canva</a>
+                    
+                </div>
+            </div>
+
+            <div class="portfollio-detail animate-on-scroll">
+                <p class="numb">03</p>
+             <h3>Lanka Vista Landing Page</h3>
+                <p>Lanka Vista is a modern travel website created to showcase Sri Lanka’s beautiful destinations, cultural attractions, 
+                    tour experiences, and special offers. It provides visitors with a clean and user-friendly platform to discover places 
+                    and plan memorable journeys across Sri Lanka.
+                 </p>
+                <div class="tech"><p>Languages: <span style="color: #00d9ff;">HTML | CSS</span></p></div>
+                <div class="live">
+                   <a href="https://muhammedilyaz.github.io/LankaVista/" target="_blank"><i class='bx bx-arrow-back'></i>Live Project</a>
+                   <a href="https://github.com/MuhammedIlyaz/LankaVista" target="_blank"><i class='bx bxl-github'></i>Github Repo</a> 
+                    <!--<a href="#"><i class="bx bxl-google"></i>Google Drive</a>
+                    <a href="#"><i class="bxl bx-canva"></i>Canva</a> -->
+                </div>
+            
+            </div>
+
+            <!--<div class="portfollio-detail animate-on-scroll">
+                <p class="numb">03</p>
+                 <h3>Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores mollitia officiis voluptatum deleniti? Et ad obcaecati temporibus, ducimus totam ipsa iure, recusandae officia consequuntur impedit ab exercitationem perspiciatis minima!</p>
+                <div class="tech"><p>Languages</p></div>
+                <div class="live">
+                   <a href="#"><i class='bx bx-arrow-back'></i>Live Project</a>
+                   <a href="#"><i class='bx bxl-github'></i>Github Repo</a>
+                    <a href="#" target="_blank"><i class="bx bxl-google"></i>Google Drive</a>
+                </div> 
+
+            </div>-->
+
+            <!--<div class="portfollio-detail animate-on-scroll">
+                <p class="numb">04</p>
+                 <h3>Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores mollitia officiis voluptatum deleniti? Et ad obcaecati temporibus, ducimus totam ipsa iure, recusandae officia consequuntur impedit ab exercitationem perspiciatis minima!</p>
+                <div class="tech"><p>Languages</p></div>
+                <div class="live">
+                    <a href="#"><i class='bx bx-arrow-back'></i>Live Project</a>
+                   <a href="#"><i class='bx bxl-github'></i>Github Repo</a>
+                    <a href="#"><i class="bx bxl-google"></i>Google Drive</a>
+                </div>
+            </div>
+
+            <div class="portfollio-detail animate-on-scroll">
+                <p class="numb">05</p>
+                 <h3>Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores mollitia officiis voluptatum deleniti? Et ad obcaecati temporibus, ducimus totam ipsa iure, recusandae officia consequuntur impedit ab exercitationem perspiciatis minima!</p>
+                <div class="tech"><p>Languages</p></div>
+                <div class="live">
+                   <a href="#"><i class='bx bx-arrow-back'></i>Live Project</a>
+                   <a href="#"><i class='bx bxl-github'></i>Github Repo</a>
+                    <a href="#"><i class="bx bxl-google"></i>Google Drive</a>
+                </div>
+            </div>
+
+            <div class="portfollio-detail animate-on-scroll">
+                <p class="numb">06</p>
+                 <h3>Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores mollitia officiis voluptatum deleniti? Et ad obcaecati temporibus, ducimus totam ipsa iure, recusandae officia consequuntur impedit ab exercitationem perspiciatis minima!</p>
+                <div class="tech"><p>Languages</p></div>
+                <div class="live">
+                   <a href="#"><i class='bx bx-arrow-back'></i>Live Project</a>
+                   <a href="#"><i class='bx bxl-github'></i>Github Repo</a
+                    <a href="#"><i class="bx bxl-google"></i>Google Drive</a>
+                </div>
+            </div>-->
+        </div> 
+
+        <!-- Right box: carousel — slides from the right -->
+        <div class="portfolio-box animate-on-scroll from-right">
+            <div class="portfolio-carousal">
+                <div class="img-slide">
+                    <div class="img-item"><img src="Projects/projects03.png" alt="Project 1"></div>
+                    <div class="img-item"><img src="Projects/Project01.png" alt="Project 2"></div>
+                    <div class="img-item"><img src="Projects/Project02.png" alt="Project 3"></div>
+                   <!-- <div class="img-item"><img src="coursal/cour3.jpeg" alt="Project 3"></div>
+                    <div class="img-item"><img src="coursal/cour4.jpeg" alt="Project 4"></div>
+                    <div class="img-item"><img src="coursal/cour5.jpeg" alt="Project 5"></div>
+                    <div class="img-item"><img src="coursal/cour6.jpeg" alt="Project 6"></div>-->
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+                <a href="https://github.com/repos?q=owner%3A%40me" class="explore-btn" target="_blank">
+                    Explore More <i class='bx bx-right-arrow-alt'></i> 
+                </a>
+                
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ════════════════════════ CONTACT ════════════════════════ -->
+<section class="Contact" id="contact">
+
+    <!-- Left: contact details slide from left -->
+    <div class="contact-intro animate-on-scroll from-left">
+        <h2>Let's Work Together</h2>
+        <p>Ready to discuss your next digital product? Whether you need a full-cycle design and development partner or just want to explore a new concept, reach out via the details below. Dedicated to prompt responses and transparent communication to launch our collaboration effectively.</p>
+
+        <div class="cont-del stagger-children">
+            <div class="right-icons">
+                <div class="icons"><i class='bx bx-phone'></i></div>
+                <div class="icon-del">
+                    <h5>Phone</h5>
+                    <span>075-240-7588</span>
+                </div>
+            </div>
+            <div class="right-icons">
+                <div class="icons"><i class='bx bx-envelope'></i></div>
+                <div class="icon-del">
+                    <h5>Email</h5>
+                    <span>ilyazzmuhammed@gmail.com</span>
+                </div>
+            </div>
+            <div class="right-icons">
+                <div class="icons"><i class='bx bx-map-pin'></i></div>
+                <div class="icon-del">
+                    <h5>Location</h5>
+                    <span>114/1 Peraru Kanthale, Trincomalee, Sri Lanka</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right: form slides from right -->
+    <div class="form-container animate-on-scroll from-right">
+        <form class="form">
+            <h1>Contact <span style="color:#00d9ff;">Me!</span></h1>
+
+            <div class="form-one">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input required name="Name" id="Name" type="text" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input required name="email" id="email" type="email" placeholder="your@email.com">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email-subject">Email Subject</label>
+                <input required name="email-subject" id="email-subject" type="text" placeholder="What's this about?">
+            </div>
+
+            <div class="form-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea required id="textarea" name="textarea" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+
+<script src="scroll-animate.js"></script>
+</body>
+</html>
